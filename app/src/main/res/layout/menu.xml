@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:text="Acción"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutCaricaturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonAccion"
+            android:layout_width="156dp"
+            android:layout_height="147dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Acción"
+            android:onClick="onCategoryClicked"
+            android:src="@drawable/accion"
+            android:tag="Acción" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTerror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonTerror"
+            android:layout_width="101dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Terror"
+            android:onClick="onCategoryClicked"
+            android:src="@drawable/terror"
+            android:tag="Terror" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Terror"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonCaricaturas"
+        android:layout_width="143dp"
+        android:layout_height="159dp"
+        android:contentDescription="Caricaturas"
+        android:onClick="onCategoryClicked"
+        android:src="@drawable/caricatura"
+        android:tag="Caricaturas" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Caricaturas"
+        android:textSize="18sp" />
+
+</LinearLayout>
